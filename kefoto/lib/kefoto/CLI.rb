@@ -41,7 +41,7 @@ class Kefoto::CLI
        @service_links.each do |link|
          if @service = link
            link.css(".row").map {|price| price["p"].value}
-            price_range << p
+            price_range << price
          end
          price_range
      end
